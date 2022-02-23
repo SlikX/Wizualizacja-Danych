@@ -18,4 +18,4 @@ print(g+k)
 a=5
 b=3
 c= a - b
-print("wynik dzialania {0:d} - {1:d} = {2:c}".format(a,b,c))
+print("wynik dzialania {0:d} - {1:d} = {2:d}".format(a,b,c))
