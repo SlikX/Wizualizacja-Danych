@@ -44,3 +44,17 @@ def PoleTrapez(a=2,b=3,h=2):
     pole = ((a+b)*h/2)
     return pole
 print(PoleTrapez())
+#zad 6
+def ciag(a =1,b =4, ile = 10):
+    for x in range (ile):
+        a = a * b
+    return a
+print(ciag())
+#Zad 7
+def ciag2(*liczba):
+    z = 2
+    for x in liczba:
+        z = z * x
+    return z
+
+print(ciag2(1,2))
