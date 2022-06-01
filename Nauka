@@ -34,6 +34,25 @@ plt.xticks(index, labels)
 plt.legend()
 plt.show()
 
+PANDAS
+df_pop.head() WYŚWITLA PIERWSZE 5 WIERSZY
+df_pop = df_pop.rename(columns={"Nowa Kolumna" : "Inna Nazwa"}) #ZMIANA NAZWY KOLUMNY
+df_pop[(df_pop['Population']>100) & (df_pop['Population']<150)] #łączenie wyrażeń
+KALKULACJE PANDAS
+print( df_pop['Population'].sum() )
+print( df_pop['Population'].max() )
+print( df_pop['Population'].min() )
+print( df_pop['Population'].mean() )
+UZYWANIE GROUP BY Z KALKULACJAMI
+print( df_pop.groupby('Region')['Population'].size() )
+print( df_pop.groupby('Region')['Population'].sum() )
+print( df_pop.groupby('Region')['Population'].min() )
+print( df_pop.groupby('Region')['Population'].max() )
+print( df_pop.groupby('Region')['Population'].mean() )
+TWORZENIE TABELI ZWRIERJĄCĄ PARE TYCH KALKULACJI NA RAZ
+df_pop.groupby('Region')['Population'].agg([min, max, sum])
+
+
 
 #DWA WYKRESY JEDNO PŁÓTNO
 x1 = np.arange(-4,5)
