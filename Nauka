@@ -109,3 +109,5 @@ plt.plot(x,f(x),'g--')
 plt.axis([1,20,0,650])(MAKS I MIN WYSWIETLANYCH WARTOŚCI NA WYKRESIES
 plt.title("zadanie 1 - wykres")
 plt.show()
+
+XxX___Potwierdzam (Wiktor-Wewe)___XxX 69
