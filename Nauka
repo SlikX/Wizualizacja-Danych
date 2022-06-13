@@ -65,6 +65,13 @@ axs[1,0].plot(x2, y2, 'g')
 #fig.delaxes(axs[1,0])
 #fig.delaxes(axs[0,1])
 plt.show()
+ZAMIAST MOŻNA UŻYĆ:
+przed pierwszym wykresem
+plt.subplot(1, 2, 1)
+przed drugim wykresem
+plt.subplot(1, 2, 2)
+przed trzecim wykresem
+plt.subplot(1, 2, 3)
 
 #WYKRES PUNKTOWY
 x_values = np.random.randint(20, 80, 20)
